@@ -8,8 +8,16 @@ The approach here is the one the brief suggests: keep the first product-name
 segment and treat the cleaned name -- not ``id`` -- as the product key.
 """
 import pandas as pd
-#from config import path
- 
+
+from .config import PROCESSED_DIR
+from .config import DATA_DIR
+
+
+def load_pre_processed(path=PROCESSED_DIR / "cleaned_1429_1.csv"):
+  """Load the prepared training dataset."""
+  return pd.read_csv(path)
+
+
 def preprocessing(filename,output_filename=None):
     reviews = pd.read_csv(filename)
     reviews = reviews.dropna(subset=["reviews.rating"]).copy()
