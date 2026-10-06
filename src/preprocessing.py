@@ -12,6 +12,10 @@ import pandas as pd
 from .config import PROCESSED_DIR
 from .config import DATA_DIR
 
+def load_raw(path=DATA_DIR / "raw" / "1429_1.csv"):
+    """Load the raw Kaggle CSV with no cleaning applied."""
+    return pd.read_csv(path, low_memory=False)
+
 
 def load_pre_processed(path=PROCESSED_DIR / "cleaned_1429_1.csv"):
   """Load the prepared training dataset."""
