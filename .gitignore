@@ -10,6 +10,8 @@ data/processed/*
 models/*
 !models/.gitkeep
 
+app/models/*
+
 # Python
 __pycache__/
 *.py[cod]
@@ -33,3 +35,6 @@ wandb/
 .DS_Store
 .vscode/
 .idea/
+
+# Gradio local cache
+.gradio/
