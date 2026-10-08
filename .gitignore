@@ -1,0 +1,35 @@
+# Data and models (too large for GitHub) -- keep the folders, not the contents
+data/*
+!data/raw/
+!data/processed/
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+models/*
+!models/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+
+# Hugging Face / transformers caches
+.cache/
+wandb/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

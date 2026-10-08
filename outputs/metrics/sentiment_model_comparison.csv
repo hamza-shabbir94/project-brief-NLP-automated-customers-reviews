@@ -1,0 +1,6 @@
+,accuracy,macro_f1,f1_negative,f1_neutral,f1_positive
+TF-IDF v2 + LogReg,0.925,0.605,0.495,0.355,0.966
+Transformer zero-shot (roberta),0.929,0.562,0.559,0.155,0.97
+TF-IDF v1 + LogReg,0.87,0.52,0.354,0.271,0.935
+TF-IDF v1 + LinearSVC,0.923,0.509,0.291,0.271,0.963
+TF-IDF v1 + Naive Bayes,0.78,0.456,0.275,0.214,0.88

@@ -1,0 +1,31 @@
+# Core
+pandas>=2.2
+numpy>=1.26
+scipy>=1.13
+
+# Classic NLP + ML (Task 1 baseline, Task 2 clustering)
+scikit-learn>=1.5
+nltk>=3.9
+
+# Transformers (Task 1 fine-tuning, Task 3 generation)
+torch>=2.3
+transformers>=4.44
+datasets>=2.20
+accelerate>=0.33
+sentence-transformers>=3.0
+evaluate>=0.4
+
+# Clustering / dimensionality reduction (Task 2)
+umap-learn>=0.5
+hdbscan>=0.8
+
+# Visualization
+matplotlib>=3.9
+seaborn>=0.13
+
+# Notebooks
+jupyterlab>=4.2
+ipywidgets>=8.1
+
+# App (see app/requirements.txt for the Spaces-only subset)
+gradio>=4.44
