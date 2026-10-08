@@ -18,7 +18,7 @@ from transformers import pipeline
 
 # Hugging Face model repositories
 ROBERTA_ID = "cardiffnlp/twitter-roberta-base-sentiment-latest"   # pretrained, used as-is
-TFIDF_REPO = "hamza-shabbir94/amazon-review-sentiment-tfidf"      # our own trained model
+TFIDF_REPO = "hamza-shabbir94/amazon-review-sentiment-analysis"      # our own trained model
 
 MODELS = {
     "RoBERTa (pretrained)": ROBERTA_ID,
