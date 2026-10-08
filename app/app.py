@@ -38,10 +38,16 @@ else:
         return {label: float(p) for label, p in zip(model.classes_, probs)}
 
 
+# Emoji shown next to each label in the app
+EMOJI = {"negative": "😞 negative", "neutral": "😐 neutral", "positive": "😊 positive"}
+
+
 def predict(review):
     """Return {label: probability} for one review, for the Gradio Label output."""
     review = (review or "").strip()
-    return scores(review) if review else {}
+    if not review:
+        return {}
+    return {EMOJI.get(label, label): p for label, p in scores(review).items()}
 
 
 demo = gr.Interface(
